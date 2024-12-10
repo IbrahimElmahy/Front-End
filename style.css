@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+  }
+  
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 375px; 
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Right and bottom shadow */}
+  
+  .card-header {
+    background: url('illustration-article.svg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .label {
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 7%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  .date, .title, .description {
+    margin: 10px 0;
+    color: hsl(0, 0%, 7%);
+  }
+  
+  .title {
+    font-weight: 800;
+  }
+  
+  .description {
+    font-size: 16px;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .author p {
+    font-weight: 800; /* Bolder font weight */
+    color: hsl(0, 0%, 7%);
+  }
+  
+  .attribution {
+    margin-top: 20px;
+    font-size: 12px;
+    color: hsl(0, 0%, 42%);
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: hsl(0, 0%, 42%);
+    text-decoration: none;
+  }
+  
+  @media (max-width: 365px){
+    .card{
+        max-width: 300px;
+    }
+
+}
